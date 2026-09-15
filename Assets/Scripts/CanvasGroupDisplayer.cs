@@ -15,4 +15,5 @@ public static class CanvasGroupDisplayer
         canvasGroup.interactable = false;
         canvasGroup.blocksRaycasts = false;
     }
+
 }

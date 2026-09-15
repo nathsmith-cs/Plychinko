@@ -3,7 +3,7 @@ using UnityEngine;
 public class Games : MonoBehaviour
 {
     public CanvasGroup StartMenuCanvasGroup;
-    private bool isGameStarted = false;
+    private static bool isGameStarted = false;
     
      public void Start()
      {
@@ -16,4 +16,9 @@ public class Games : MonoBehaviour
         CanvasGroupDisplayer.Hide(StartMenuCanvasGroup);
         isGameStarted = true;
     }
+
+	public static bool IsGameStarted()
+	{
+		return isGameStarted;
+	}
 }
